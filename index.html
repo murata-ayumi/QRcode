@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QRコードジェネレーター</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>QRコードジェネレーター</h1>
+      <input type="text" id="text" placeholder="https://example.com" />
+      <div>
+        <label for="fgColor">QRコードの色:</label>
+        <input type="color" id="fgColor" value="#000000" />
+      </div>
+      <div>
+        <label for="bgColor">背景色:</label>
+        <input type="color" id="bgColor" value="#ffffff" />
+      </div>
+      <div class="size-select">
+        <label for="size">サイズ:</label>
+        <select id="size">
+          <option value="150">小 (150px)</option>
+          <option value="200">中 (200px)</option>
+          <option value="240" selected>大 (240px)</option>
+        </select>
+      </div>
+      <div class="gear">
+        <img src="./images/qrj-main.png" alt="機械" />
+        <img src="./images/qrj-歯車.png" alt="歯車" />
+      </div>
+      <button id="generate">QRコードを生成</button>
+      <div id="qrcode"></div>
+      <button id="copy">クリップボードにコピー</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

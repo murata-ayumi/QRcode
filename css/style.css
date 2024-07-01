@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Kiwi+Maru&family=Rampart+One&display=swap');
+
+body {
+  font-family: 'Kiwi Maru', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vw;
+  height: 100vh;
+  background-color: #f1bd37;
+  margin: 0;
+  color: #373636;
+}
+
+.container {
+  text-align: center;
+  height: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+h1 {
+  font-family: 'Rampart One', sans-serif;
+  font-weight: bold;
+  font-size: clamp(1.5rem, 1.227rem + 1.36vw, 2.25rem);
+  margin-bottom: 10px;
+  color: #538c63;
+}
+input[type='text'] {
+  width: 80%;
+  height: 35px;
+  font-family: 'Kaisei Decol', serif;
+  font-size: clamp (0.625rem, 0.534rem + 0.45vw, 0.875rem);
+  padding: 0.5px 5px;
+  margin: 10px 0;
+  border: 1px solid #538c63;
+  border-radius: 5px;
+  text-align: center;
+}
+input[type='text']::placeholder {
+  font-size: 12px;
+}
+input:focus {
+  outline: none;
+  background-color: #efe6c6;
+}
+label {
+  font-weight: 600;
+  text-align: center;
+}
+.size-select {
+  display: flex;
+  align-items: center; /* アイテムを垂直方向に中央揃え */
+  justify-content: center;
+  margin-bottom: 10px; /* 下の余白を追加 */
+}
+
+select {
+  font-size: clamp (0.625rem, 0.534rem + 0.45vw, 0.875rem);
+  height: auto;
+  padding: 4px 5px;
+  margin: 10px 0;
+  border: 1px solid #538c63;
+  border-radius: 5px;
+  text-align: center;
+}
+select:focus {
+  outline: none;
+}
+button {
+  font-size: clamp(0.75rem, 0.614rem + 0.68vw, 1.125rem);
+  padding: 10px 20px;
+  border: none;
+  background-color: #538c63;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #457a55;
+}
+#copy {
+  margin-top: 20px;
+}
+#qrcode {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.gear {
+  display: flex;
+  position: relative;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto; /* 左右の余白を自動調整し、中央に配置します */
+  width: fit-content; /* 必要な幅に合わせる */
+  position: relative;
+}
+.gear img:first-of-type {
+  position: absolute;
+  width: 100px;
+}
+.gear img:last-of-type {
+  position: absolute;
+  width: 30px;
+  right: 6px;
+  top: -17px;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
