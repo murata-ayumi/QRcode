@@ -77,14 +77,16 @@ button {
   border-radius: 10px;
   cursor: pointer;
   margin: 10px;
+  text-align: center;
 }
 
 button:hover {
   background-color: #457a55;
 }
 .material-icons-outlined {
-  vertical-align: bottom;
+  vertical-align: middle;
   margin-left: 5px;
+  font-size: clamp(0.75rem, 0.614rem + 0.68vw, 1.125rem);
 }
 #copy {
   margin-top: 20px;
