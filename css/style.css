@@ -82,6 +82,10 @@ button {
 button:hover {
   background-color: #457a55;
 }
+.material-icons-outlined {
+  vertical-align: bottom;
+  margin-left: 5px;
+}
 #copy {
   margin-top: 20px;
 }

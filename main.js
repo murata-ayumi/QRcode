@@ -34,6 +34,9 @@ document.getElementById('generate').addEventListener('click', () => {
     });
   }, 1500); // 1.5秒後に停止（QRコード生成に応じて調整可能）
 });
+document.getElementById('textClear').addEventListener('click', () => {
+  document.getElementById('text').value = '';
+});
 
 document.getElementById('copy').addEventListener('click', () => {
   const qrcodeCanvas = document.querySelector('#qrcode canvas');

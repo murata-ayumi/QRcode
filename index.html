@@ -6,11 +6,16 @@
     <title>QRコードジェネレーター</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <h1>QRコードジェネレーター</h1>
       <input type="text" id="text" placeholder="https://example.com" />
+      <button id="textClear">クリア</button>
       <div>
         <label for="fgColor">QRコードの色:</label>
         <input type="color" id="fgColor" value="#000000" />
@@ -33,7 +38,11 @@
       </div>
       <button id="generate">QRコードを生成</button>
       <div id="qrcode"></div>
-      <button id="copy">クリップボードにコピー</button>
+      <button id="copy">
+        クリップボードにコピー<span class="material-icons-outlined"
+          >content_paste</span
+        >
+      </button>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
