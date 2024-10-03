@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vw;
-  height: 100vh;
+  height: auto;
   background-color: #f1bd37;
   margin: 0;
   color: #373636;
@@ -19,6 +19,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 10px;
+  margin-inline: 10px;
 }
 h1 {
   font-family: 'Rampart One', sans-serif;

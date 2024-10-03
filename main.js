@@ -5,8 +5,7 @@ document.getElementById('generate').addEventListener('click', () => {
   const size = parseInt(document.getElementById('size').value);
 
   // URL形式の正規表現パターン
-  const urlPattern = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i;
-
+  const urlPattern = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$|^[\w\s]+$/i;
   // 入力がURL形式かどうかをチェック
   if (!urlPattern.test(text.trim())) {
     alert('正しいURL形式でテキストを入力してください🥰');
